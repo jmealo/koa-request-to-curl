@@ -39,7 +39,7 @@ function toCurl(platform) {
         escapeString = platform === 'win' ? escapeStringWindows : escapeStringPosix,
         data = [],
         requestHeaders = this.request.headers,
-        requestBody = this.request.body,
+        requestBody = typeof this.request.body === 'object' ? JSON.stringify(this.request.body) : this.request.body,
         contentType = requestHeaders['content-type'],
         url = (this.secure ? 'https://' : 'http://') + this.host + this.url;
 
