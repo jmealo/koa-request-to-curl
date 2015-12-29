@@ -1,0 +1,10 @@
+{
+  "name": "koa-request-to-curl",
+  "version": "0.1.0",
+  "description": "Adds a toCurl method to each request context that converts that request into a ready to run Curl command.",
+  "main": "index.js",
+  "author": "Jeffrey Mealo <jeffreymealo@gmail.com> (http://jeffreymealo.com)",
+  "license": "MIT",
+  "readme": "https://github.com/jmealo/koa-request-to-curl/blob/master/README.md",
+  "repository": "https://github.com/jmealo/koa-request-to-curl.git"
+}
