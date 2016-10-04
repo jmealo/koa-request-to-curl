@@ -78,7 +78,7 @@ function toCurl(platform) {
 
 
 module.exports = function(options) {
-    return function *(next) {
+    return function* koaRequestToCurl(next) {
         this.toCurl = toCurl;
         yield next;
     };
