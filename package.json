@@ -1,6 +1,6 @@
 {
   "name": "koa-request-to-curl",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Adds a toCurl method to each request context that converts that request into a ready to run Curl command.",
   "main": "index.js",
   "author": "Jeffrey Mealo <jeffreymealo@gmail.com> (http://jeffreymealo.com)",
