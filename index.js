@@ -78,8 +78,8 @@ function toCurl(platform) {
 
 
 module.exports = function(options) {
-    return function* koaRequestToCurl(next) {
-        this.toCurl = toCurl;
-        yield next;
+    return async function koaRequestToCurl(ctx, next) {
+        ctx.toCurl = toCurl;
+        await next();
     };
 };
